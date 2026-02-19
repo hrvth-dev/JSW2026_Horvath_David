@@ -1,18 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 
 body {
-    background-color: #1e73be;
+    background-color: rgb(3 114 197) ;
     font-family: Arial, sans-serif;
-    color: #0d2c54;
+    color: rgb(0 61 138);
     margin: 0;
 }
 
-.custom-container {
-    background-color: #f1f1f1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-}
 
 h1, h2, h3 {
     font-family: 'Rubik Distressed', cursive;
@@ -22,3 +16,44 @@ h1, h2, h3 {
 h2 {
     font-variant: small-caps;
 } 
+
+header {
+    height: 400px;
+    background-image:
+        linear-gradient(
+            to bottom,
+            rgba(94 60 38, 0.8),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/banner.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Rubik Distressed', cursive;
+    font-weight: bold;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    padding: 15px 40px;
+}
+
+
+
+@media (min-width: 750px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
